@@ -2,7 +2,7 @@ package com.example.quizlingo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-
+// Assignment is due May 8
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
