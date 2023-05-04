@@ -26,5 +26,24 @@ class Question2Activity : AppCompatActivity() {
             val Intent = Intent(this, Question3Activity::class.java)
             startActivity(Intent)
         }
+
+
+        val photoAPIFragment = this.supportFragmentManager.findFragmentById(R.id.photofragment_container)
+        if (photoAPIFragment == null) {
+            val fragment = PhotoAPIFragment()
+            this.supportFragmentManager
+                .beginTransaction()
+                .add(R.id.photofragment_container, fragment)
+                .commit()
+        }
+
+        val translatorAPIFragment = this.supportFragmentManager.findFragmentById(R.id.translatorfragment_container)
+        if (translatorAPIFragment == null) {
+            val fragment = TranslatorAPIFragment()
+            this.supportFragmentManager
+                .beginTransaction()
+                .add(R.id.translatorfragment_container, fragment)
+                .commit()
+        }
     }
 }
