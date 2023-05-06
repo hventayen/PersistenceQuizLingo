@@ -19,7 +19,7 @@ class Question3Activity : AppCompatActivity() {
         nextButton = findViewById(R.id.nextButton3)
 
         previousButton.setOnClickListener {
-            val Intent = Intent(this, Question3Activity::class.java)
+            val Intent = Intent(this, Question2Activity::class.java)
             startActivity(Intent)
         }
         nextButton.setOnClickListener {
